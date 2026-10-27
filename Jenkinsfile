@@ -14,9 +14,9 @@ pipeline {
             steps{
                 echo "The responsible of this project is ${AUTHOR} and and will be deployed in ${ENVIRONMENT}"
                 //Fisrt, drop the directory if exists
-                sh 'rm -rf /home/jenkins/web'
+                sh 'rm -rf /var/jenkins_home/web'
                 //Create the directory
-                sh 'mkdir /home/jenkins/web'
+                sh 'mkdir/var/jenkins_home//web'
                 
             }
         }
